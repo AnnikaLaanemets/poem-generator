@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Poems</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
       </header>
       <div>
         <main>
-          <form>
+          <form id="poem-form">
             <input
               type="text"
               placeholder="Enter the topic of the poem"
@@ -31,7 +32,7 @@
             />
             <input type="submit" class="submit-button" />
           </form>
-          <div class="poem">
+          <div class="poem" id="poem">
             <div>Two hearts in tune, a perfect song,</div>
             <div>Together we’re where we belong.</div>
             <div>In every look, love’s story told,</div>
