@@ -4,41 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="AI poem generator" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Poems</title>
   </head>
   <body>
-    <header>
-      <h1>Poem generator</h1>
-    </header>
-    <div>
-      <main>
-        <form>
-          <input
-            type="text"
-            placeholder="Enter the topic of the poem"
-            autocomplete="off"
-            autofocus
-            required
-          />
-          <input type="submit" />
-          <div>Two hearts in tune, a perfect song,</div>
-          <div>Together we’re where we belong.</div>
-          <div>In every look, love’s story told,</div>
-          <div>A bond that never will grow old.</div>
-        </form>
-      </main>
-    </div>
+    <div class="container">
+      <header>
+        <h1>Poem generator</h1>
+      </header>
+      <div>
+        <main>
+          <form>
+            <input
+              type="text"
+              placeholder="Enter the topic of the poem"
+              autocomplete="off"
+              autofocus
+              required
+              class="input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="poem">
+            <div>Two hearts in tune, a perfect song,</div>
+            <div>Together we’re where we belong.</div>
+            <div>In every look, love’s story told,</div>
+            <div>A bond that never will grow old.</div>
+          </div>
+        </main>
+      </div>
 
-    <footer>
-      Open
-      <a
-        href="https://github.com/AnnikaLaanemets/poem-generator"
-        target="_blank"
-        >source</a
-      >
-      code by Annika
-    </footer>
+      <footer>
+        Open
+        <a
+          href="https://github.com/AnnikaLaanemets/poem-generator"
+          target="_blank"
+          >source</a
+        >
+        code by Annika
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
