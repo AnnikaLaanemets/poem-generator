@@ -7,6 +7,7 @@ let input = document.querySelector("#user-input");
 let apiKey = "baf15f814713odta8a4baa99ed0733e5";
 
 function displayPoem(response) {
+  poemElement.innerHTML = `Generating short poem about ${input.value}`;
   let newPoem = response.data.answer;
   new Typewriter("#poem", {
     strings: newPoem,

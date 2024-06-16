@@ -12,16 +12,20 @@ body {
 }
 
 h1 {
-  color: aliceblue;
-  font-weight: 200px;
-  font-size: 22px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 form {
   padding: 5px;
   font-size: 12px;
+}
+
+small {
+  margin-right: 300px;
+  color: aliceblue;
+  opacity: 0.6;
 }
 
 input {
@@ -47,21 +51,29 @@ input {
 
 .poem {
   padding: 20px;
-
   color: #ffcad4;
   font-family: "Playwrite NL";
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   line-height: 3;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 footer {
-  margin-top: 50px;
+  margin: 40px;
   font-size: 14px;
 }
 
 a {
   color: #ef5f8c;
+}
+
+@media (max-width: 450px) {
+  .poem {
+    font-size: 16px;
+  }
+  small {
+    margin-right: 80px;
+  }
 }
