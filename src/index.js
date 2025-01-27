@@ -21,7 +21,7 @@ function generatePoem(event) {
   event.preventDefault();
   let prompt = `Write a short sweet rhyming poem about ${input.value}`;
   let context =
-    "You are a creative poet. Please provide poems in basic HTML, maximum length 300 and separate lines with <br> element. Make sure that first line of answer is first line of poem. Please don`t add titles.";
+    "You are a creative poet. Please provide poems in basic HTML, maximum length 160 and separate lines with <br> element. Make sure that first line of answer is first line of poem, maxium length 4 lines. Please don`t add titles.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   axios.get(apiUrl).then(displayPoem);
 }
